@@ -1,5 +1,9 @@
 <div align="left"><img src="doc/image/espnet_logo1.png" width="550"/></div>
 
+### Demo for training streaming transformer with smocha and MTA attention modules:
+https://colab.research.google.com/drive/1xu4qkOIeIgmmX56DnwxlFI3CLvEHcdLn?usp=sharing
+
+New attention classes added at : espnet/nets/pytorch_backend/rnn/new_attentions.py 
 # ESPnet: end-to-end speech processing toolkit
 
 |   system/pytorch ver.   |                                                         1.4.0                                                          |                                                         1.5.1                                                          |                                                         1.6.0                                                          |                                                         1.7.1                                                          |                                                         1.8.1                                                          |                                                         1.9.1                                                          |                                                                    1.10.1                                                                     |
