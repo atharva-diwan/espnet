@@ -100,7 +100,7 @@ def add_arguments_rnn_attention_common(group):
     """Define common arguments for RNN attention."""
     group.add_argument(
         "--atype",
-        default="dot",
+        default="mocha",
         type=str,
         choices=[
             "noatt",
@@ -115,6 +115,8 @@ def add_arguments_rnn_attention_common(group):
             "multi_head_add",
             "multi_head_loc",
             "multi_head_multi_res_loc",
+            "mta",
+            "mocha",
         ],
         help="Type of attention architecture",
     )

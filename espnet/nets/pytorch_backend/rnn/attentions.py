@@ -8,7 +8,7 @@ import torch.nn.functional as F
 
 from espnet.nets.pytorch_backend.nets_utils import make_pad_mask
 from espnet.nets.pytorch_backend.nets_utils import to_device
-
+from espnet.nets.pytorch_backend.rnn.new_attentions import *
 
 def _apply_attention_constraint(
     e, last_attended_idx, backward_window=1, forward_window=3
@@ -1768,6 +1768,11 @@ def initial_att(
         att = AttMultiHeadMultiResLoc(
             eprojs, dunits, aheads, adim, adim, aconv_chans, aconv_filts, han_mode
         )
+    elif atype == "mta":
+        att = MTA(eprojs, dunits, adim)
+    elif atype == "mocha":
+        att = MoChA(eprojs, dunits, adim, awin)
+
     return att
 
 
