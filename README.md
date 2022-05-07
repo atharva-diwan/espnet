@@ -1,9 +1,10 @@
 ### Demo for training streaming transformer with smocha and MTA attention modules:
 https://colab.research.google.com/drive/1xu4qkOIeIgmmX56DnwxlFI3CLvEHcdLn?usp=sharing
 
-New attention classes added at : espnet/nets/pytorch_backend/rnn/new_attentions.py 
-source: https://github.com/HaoranMiao/streaming-attention 
-Corresponding arguments for classes modified at: espnet/nets/pytorch_backend/rnn/argument.py 
+New attention classes added at : espnet/nets/pytorch_backend/rnn/new_attentions.py \
+source: https://github.com/HaoranMiao/streaming-attention \
+Corresponding arguments for classes modified at: espnet/nets/pytorch_backend/rnn/argument.py \
+To use any attention module, use flag --atype while training, (options given in line 102 of file argument.py)
 
 
 <div align="left"><img src="doc/image/espnet_logo1.png" width="550"/></div>
